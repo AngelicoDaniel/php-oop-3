@@ -18,10 +18,12 @@ $prodotti = [
 
 var_dump( $prodotti );
 
-// foreach( $prodotti as $elem ){
-//   echo get_class($elem);
-//   echo "<br>";
-// }
+foreach( $prodotti as $elem ){
+  echo get_class($elem);
+  echo "<br>";
+  echo $elem->nome;
+  echo "<br>";
+}
 ?>
 
 <!DOCTYPE html>
