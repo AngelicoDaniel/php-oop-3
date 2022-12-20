@@ -3,7 +3,7 @@
 include_once __DIR__ . '/generi.php';
 
 class Prodotto{
-  public $nome;
+  use Traits;
   public $autore;
   public $prezzo;
   public $generi;
