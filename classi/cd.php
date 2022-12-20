@@ -3,7 +3,7 @@
 include_once __DIR__ . '/prodotto.php';
 
 class CD extends prodotto{
-  public $song;
+  public $formato;
 
 
   public function __construct(
@@ -15,9 +15,9 @@ class CD extends prodotto{
     String $immagine,
 
 
-    String $song
+    String $formato
     ) {
-    $this->song = $song;
+    $this->formato = $formato;
 
     parent::__construct($nome,$autore,$prezzo,$generi,$pubblicato,$immagine );
   }

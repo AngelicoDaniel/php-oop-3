@@ -3,7 +3,7 @@
 include_once __DIR__ . '/prodotto.php';
 
 class DVD extends prodotto{
-  public $movie;
+  public $durata;
 
 
   public function __construct(
@@ -15,9 +15,9 @@ class DVD extends prodotto{
     String $immagine,
 
 
-    String $movie
+    String $durata
     ) {
-    $this->movie = $movie;
+    $this->durata = $durata;
 
     parent::__construct($nome,$autore,$prezzo,$generi,$pubblicato,$immagine );
   }
